@@ -7,6 +7,7 @@ pub use wstr_impl::*;
 
 proc_macro_expr_decl!(wstr! => wstr_impl);
 
+#[cfg(feature = "widestring")]
 #[macro_export]
 macro_rules! widestr {
     ($str:tt) => (widestring::WideStr::from_slice(wstr!($str)))

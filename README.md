@@ -13,7 +13,7 @@ Then add this in your crate root:
 #[macro_use]
 extern crate wstr;
 ```
-If you need `widestr!` macro (for the `WideStr` string), also add a dependency to [`widestring`](http://starkat99.github.io/widestring-rs/widestring/) crate.
+If you need `widestr!` macro (for the `WideStr` string), also add a dependency to [`widestring`](http://starkat99.github.io/widestring-rs/widestring/) crate and use `widestring` feature.
 
 Now you are ready to use `wstr!` and `widestr!` macro.
 ```rust
