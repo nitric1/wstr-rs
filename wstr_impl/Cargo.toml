@@ -1,0 +1,14 @@
+[package]
+name = "wstr_impl"
+version = "0.1.0"
+authors = ["LEE Wondong <wdlee91@gmail.com>"]
+description = "Private macro implementations for compile-time UTF-16 (wide) string literals."
+license = "MIT"
+
+[dependencies]
+proc-macro-hack = "0.3"
+syn = "0.11"
+widestring = "0.2"
+
+[lib]
+proc-macro = true

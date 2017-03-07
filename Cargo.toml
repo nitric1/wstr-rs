@@ -1,0 +1,19 @@
+[package]
+name = "wstr"
+version = "0.1.0"
+authors = ["LEE Wondong <wdlee91@gmail.com>"]
+description = "Macros for compile-time UTF-16 (wide) string literals."
+license = "MIT"
+repository = "https://github.com/nitric1/wstr-rs"
+readme = "README.md"
+keywords = ["windows", "winapi", "win32", "wide", "wstr", "utf-16"]
+categories = ["encoding"]
+
+[features]
+default = ["widestr"]
+widestr = []
+
+[dependencies]
+proc-macro-hack = "0.3"
+widestring = "0.2"
+wstr_impl = { version = "0.1", path = "wstr_impl" }
