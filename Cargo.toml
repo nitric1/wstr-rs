@@ -6,7 +6,7 @@ description = "Macros for compile-time UTF-16 (wide) string literals."
 license = "MIT"
 repository = "https://github.com/nitric1/wstr-rs"
 readme = "README.md"
-keywords = ["windows", "winapi", "win32", "wide", "wstr", "utf-16"]
+keywords = ["windows", "winapi", "win32", "wide", "utf-16"]
 categories = ["encoding"]
 
 [workspace]
