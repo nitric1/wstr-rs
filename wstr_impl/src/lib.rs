@@ -1,14 +1,13 @@
 #[macro_use]
 extern crate proc_macro_hack;
 extern crate syn;
-extern crate widestring;
 
 use syn::{TokenTree, Token, Lit};
 
 fn input_to_utf16_vec(input: &str) -> Vec<u16> {
     let ast = &syn::parse_token_trees(input).unwrap()[0];
     if let TokenTree::Token(Token::Literal(Lit::Str(ref s, _))) = *ast {
-        widestring::WideString::from_str(&s).into_vec()
+        s.encode_utf16().collect()
     } else {
         panic!("input must be string literal");
     }

@@ -9,11 +9,7 @@ readme = "README.md"
 keywords = ["windows", "winapi", "win32", "wide", "wstr", "utf-16"]
 categories = ["encoding"]
 
-[features]
-default = ["widestr"]
-widestr = []
-
 [dependencies]
 proc-macro-hack = "0.3"
-widestring = "0.2"
+widestring = { version = "0.2", optional = true }
 wstr_impl = { version = "0.1", path = "wstr_impl" }
