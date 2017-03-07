@@ -7,7 +7,7 @@ license = "MIT"
 repository = "https://github.com/nitric1/wstr-rs"
 readme = "README.md"
 keywords = ["windows", "winapi", "win32", "wide", "utf-16"]
-categories = ["encoding"]
+categories = ["encoding", "os::windows-apis"]
 
 [workspace]
 members = ["wstr_impl"]
