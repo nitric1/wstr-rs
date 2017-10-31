@@ -11,6 +11,13 @@ fn wstr_works() {
     assert_eq!(wstr!("\u{1F007}\u{1F010}\u{1F019}"), &[0xD83Cu16, 0xDC07, 0xD83C, 0xDC10, 0xD83C, 0xDC19]);
 }
 
+#[test]
+fn wstrz_works() {
+    assert_eq!(wstrz!("abcd"), &[0x61u16, 0x62, 0x63, 0x64, 0x00]);
+    assert_eq!(wstrz!("가나다"), &[0xAC00u16, 0xB098, 0xB2E4, 0x00]);
+    assert_eq!(wstrz!("\u{1F007}\u{1F010}\u{1F019}"), &[0xD83Cu16, 0xDC07, 0xD83C, 0xDC10, 0xD83C, 0xDC19, 0x00]);
+}
+
 #[cfg(feature = "widestring")]
 #[test]
 fn widestr_works() {
