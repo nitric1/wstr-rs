@@ -1,6 +1,6 @@
 [package]
 name = "wstr_impl"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["LEE Wondong <wdlee91@gmail.com>"]
 description = "Private macro implementations for compile-time UTF-16 (wide) string literals."
 license = "MIT"
