@@ -5,7 +5,7 @@ Rust macros for compile-time UTF-16 (wide) string literals.
 
 Add this in your `Cargo.toml` dependencies:
 ```toml
-wstr = "0.1"
+wstr = "0.2"
 ```
 
 Then add this in your crate root:

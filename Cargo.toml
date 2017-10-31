@@ -1,6 +1,6 @@
 [package]
 name = "wstr"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["LEE Wondong <wdlee91@gmail.com>"]
 description = "Macros for compile-time UTF-16 (wide) string literals."
 license = "MIT"
@@ -15,4 +15,4 @@ members = ["wstr_impl"]
 [dependencies]
 proc-macro-hack = "0.3"
 widestring = { version = "0.2", optional = true }
-wstr_impl = { version = "0.1", path = "wstr_impl" }
+wstr_impl = { version = "0.2", path = "wstr_impl" }
